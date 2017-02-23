@@ -1,0 +1,236 @@
+html,body{
+    /*去除掉到浏览器边界的空档*/
+    margin: 0px;
+    padding: 0px;
+    font-size:62.5%;/*设置默认字体大小为10px*/
+}
+.clear{
+    clear: both;
+}
+.whole_div{
+    /*margin:0 auto;*/
+    width:100%;
+    height:0;
+    padding-bottom: 172.22%;/*还要改。。。。*/
+    /*border: solid;*/
+    background-color: #eff0f4;
+}
+/*用背景图*/
+.header{
+    position: fixed;
+    background-image: url(images/header.png);
+    /*下面是透明度*/
+    /*opacity:0.5;*/
+    /*filter:alpha(opacity=50);*/
+    /*background:#000;*/
+
+
+    /*background-position: center;*/
+    /*background-attachment: fixed;*/
+    background-size: cover;
+    background-repeat:no-repeat;
+    width:100%;
+    height: 0;
+    padding-bottom:12.22%;/* 29px/720px */
+    text-align: center;
+    /*border: solid;*/
+}
+.close{
+    position: absolute;
+    /*top:32.95%;!*此top位置以父元素的高度计算 29/88=32.95%*!*/
+    left:4.16%;
+    /*border: solid;*/
+    font-size:4.44vw;/*32px/720=4.44*/
+    font-family: "黑体";
+    color: #ffffff;
+    line-height:275%;/* header高88px/字体32px=275% 用来垂直居中*/
+}
+.login{
+    /*margin: 0 auto;!*水平居中*!*/
+    display: inline;/*内联元素才可左右排列*/
+    /*position: absolute;*/
+    /*border: solid;*/
+    font-size:5vw;/*36px/10=3.6*/
+    font-family: "黑体";
+    color: #ffffff;
+    line-height:244%;/* header高88px/字体36px=244% 用来垂直居中*/
+}
+.register{
+    position: absolute;
+    /*left:87.22%;*/
+    top:0;/*不加，则注册会移到header下面*/
+    right:4.16%;
+    /*border: solid;*/
+    font-size:4.44vw;/*32px/10=3.2*/
+    font-family: "黑体";
+    color: #ffffff;
+    line-height:275%;/* header高88px/字体32px=275% 用来垂直居中*/
+}
+.top_blank_space{
+    padding-bottom: 14.44%;/* 厚104px/720px=14.44% */
+    background-color: #eff0f4;
+}
+form{
+    /*border:solid;*/
+    /*border-color: #09BE07;*/
+    /*overflow:auto;*/
+    background-color: #eff0f4;
+    width: 100%;
+}
+.phone_num{
+    /*border: solid;*/
+    /*border-color: red;*/
+    background-image: url(images/input.png);
+    /*控制高宽比例与设计稿相同*/
+    width:100%;
+    height: 0;
+    padding-bottom:13.88%;/* 100px/720px */
+    /*margin-bottom:3.4%;!* 远离下面的密码输入行 *!*/
+}
+.phone_icon{
+    float: left;
+    /*border: solid;*/
+    margin-left: 5.97%;/* 43px/720px=5.97% */
+    /* 控制大小比例*/
+    width:3.75%;/* 27px/720px= */
+    /*padding-bottom: 5.69%;!* 父元素是phone_num,所以height41px/720px=5.69%*!*/
+    /*垂直居中，30px/720px=4.16%*/
+    margin-top: 4.06%;
+}
+.vertical_bar_icon_first{
+    float: left;
+    /*border: solid;*/
+    margin-left:6.38%;/* 46px/720px=6.38% */
+    /*控制大小比例*/
+    width:0.27%;/* 2px/720px=0.27% */
+    /*height:7.22%; !* 52px/720px=7. *!*/
+    /*padding-bottom: 5.08%;!* height51px/720px=7.08% *!*/
+    /* 垂直居中 24px/720px=3.33%*/
+    margin-top: 3.33%;
+}
+/*.include_phone{*/
+    /*border:solid;*/
+/*}*/
+.phone_num input{
+    border:none;
+    /*border:solid;*/
+    margin-left: 4.58%;/* 33px/720=4.58% */
+    width:74.86%;/* 设计稿里的width是539px 539/720=74.86% */
+    /*height:100%;!* 29px/720px=4.02% *!*/
+
+    /* 垂直居中 34px/720=4.72% 先暂且用目测：4%*/
+    margin-top:4%;
+
+    font-size: 4.44vw;/*32/720=4.44%*/
+    /* 父元素高100px/字体大小32px 垂直居中 */
+    /*line-height: 312.5%;*/
+    outline:medium;
+
+}
+/* 设置phone_num的placeholder的文字颜色 */
+.phone_num input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.phone_num input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.phone_num input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.phone_num input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.passwd{
+    margin-top:1.94%; /* 父元素是form，14px/720px=1.94%*/
+    /*border: solid;*/
+    /*border-color: yellow;*/
+    background-image: url(images/input.png);
+
+    /*控制高宽比例与设计稿相同*/
+    width:100%;
+    height: 0;
+    padding-bottom:13.88%;/* 100px/720px 这个是将厚度撑起来*/
+}
+.pwd_icon{
+    float: left;
+    /*border: solid;*/
+    margin-left: 5.97%;/* 43px/720px=5.97% */
+    /*!* 控制大小比例*!*/
+    width:3.75%;/* 27px/720px= */
+    /*padding-bottom: 5.69%;!* 父元素是phone_num,所以height41px/720px=5.69%*!*/
+    /*!*垂直居中，30px/720px=4.16%*!*/
+    margin-top: 4.16%;
+}
+.vertical_bar_icon_second{
+    float: left;
+    /*border: solid;*/
+    margin-left:6.38%;/* 46px/720px=6.38% */
+    /*控制大小比例*/
+    width:0.27%;/* 2px/720px=0.27% */
+    /*height:7.22%; !* 52px/720px=7. *!*/
+    /*padding-bottom: 5.08%;!* height51px/720px=7.08% *!*/
+    /* 垂直居中 24px/720px=3.33%*/
+    margin-top: 3.33%;
+}
+.passwd input{
+    border:none;
+    /*border:solid;*/
+    margin-left: 4.58%;/* 33px/720=4.58% */
+    width:74.86%;/* 设计稿里的width是539px 539/720=74.86% */
+    /*height:100%;!* 29px/720px=4.02% *!*/
+
+    /* 垂直居中 34px/720=4.72% 先暂且用目测：4%*/
+    margin-top:4%;
+
+    font-size: 4.44vw;/*32/720=4.44%*/
+    /* 父元素高100px/字体大小32px 垂直居中 */
+    /*line-height: 312.5%;*/
+    outline:medium;
+}
+/* 设置passwd的placeholder的文字颜色 */
+.passwd input::-webkit-input-placeholder{ /* WebKit browsers */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.passwd input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.passwd input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.passwd input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#e1e5e7;
+    font-family: "黑体";
+}
+.btn{
+    background-image: url(images/btn_icon.png);
+    border: none;
+    display:inline-block;
+    margin-top:9.58%;/*与上面的input的间隔 69px/720px=9.58% */
+    width:100%;
+    /*按钮高宽比例控制 字与上边的距离为34px，因为字与字的border还有2px的距离，所以取32px。32/720=4.44%*/
+    padding: 4.44%;
+
+}
+.btn span{
+    /*border:solid;*/
+    font-size: 5vw;/* 36px/720=5% */
+    color: #f3f4f6;
+    vertical-align: center;
+}
+a{
+    float: right;
+    margin-right: 4.16%;/* 30/720=4.16% */
+    /*border:solid;*/
+    font-family: "黑体";
+    font-size: 4.44vw;/* 32px/720px=4.44% */
+    color: #5fc0cd;
+    margin-top: 2.22%; /* (19px-3px)/720px=2.22%*/
+
+}
